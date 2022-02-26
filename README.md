@@ -50,3 +50,6 @@ kubectl -n default exec backend -- curl --trace - --trace-time frontend
 
 ### Restrict All Traffic Flow on the default Namespace
 `kubectl apply -f policies/ns-default-deny.yaml`
+
+### Allow Ingress and Egress Traffic from Frontend to Backend
+`kubectl apply -f policies/po-frontend-egr-ing.yam`
